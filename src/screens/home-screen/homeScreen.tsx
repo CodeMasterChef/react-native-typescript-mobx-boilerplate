@@ -3,6 +3,7 @@ import { Text, View, TouchableOpacity, Button } from 'react-native';
 import { observer, inject } from 'mobx-react';
 import CounterStore from '../../store/counterstore';
 import { DefaultNavigationOptions } from '../../constants/defaultHeaderStyle';
+import { appRoute } from '../../navigation/appRoute';
 
 interface props {
   counterStore: CounterStore;
@@ -36,7 +37,7 @@ class HomeScreen extends Component<props, {}> {
         <Button
           title='Go to profile'
           onPress={() => {
-            navigation.navigate('Profile');
+            navigation.navigate(appRoute.profileScreen);
           }}
         />
       </View>

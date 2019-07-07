@@ -3,6 +3,7 @@ import { View, Text, Button } from 'react-native';
 import CounterStore from '../../store/counterstore';
 import { observer, inject } from 'mobx-react';
 import { DefaultNavigationOptions } from '../../constants/defaultHeaderStyle';
+import { appRoute } from '../../navigation/appRoute';
 
 interface props {
   counterStore: CounterStore;
@@ -31,7 +32,7 @@ class ProfileScreen extends Component<props, {}> {
           title='Decrement '
         />
         <Button
-          onPress={()=>{this.props.navigation.goBack()}}
+          onPress={()=>{this.props.navigation.navigate(appRoute.homeScreen)}}
           title='Go back '
         />
       </View>
