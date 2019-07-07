@@ -42,7 +42,7 @@ const moreRoute = {
 const moreStack = createStackNavigator(moreRoute);
 
 moreStack.navigationOptions = () => ({
-  tabBarLabel: 'home',
+  tabBarLabel: 'profile',
   tabBarOptions: {
     showLabel: true,
     activeTintColor: Colors.tabIconSelected,
