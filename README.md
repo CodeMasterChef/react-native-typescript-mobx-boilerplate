@@ -7,7 +7,7 @@ forked from https://github.com/InvertedX/react-native-typescript-mobx-boilerplat
 - Typescript [link](https://www.typescriptlang.org/)
 - Mobx [link](https://mobx.js.org)
 - React Navigation [link](https://reactnavigation.org)
-- React Native 0.59.9
+- React Native 0.59.8
 
 ---
 # 🚀 Getting Started:
